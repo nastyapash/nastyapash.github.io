@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+}
+/*.fixed {*/
+    /*position: fixed;*/
+/*}*/
+.logo {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 20px 0 20px 12% ;
+}
+nav {
+    width: 100%;
+    text-align: right;
+    margin: 25px 12% 20px 0;
+}
+.topnav a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 12px 2px 12px;
+}
+.icon {
+    display: none;
+}
+.topnav a:hover {
+    border-bottom: 2px solid #FC4681;
+}
+
+main .main_welcome {
+    background: black;
+    text-align: center;
+    padding: 230px 0 360px 0;
+}
+main .main_welcome p {
+    color: #999999;
+    font-size: 20px;
+}
+main .main_welcome h1 {
+    color: #999999;
+    font-size: 44px;
+}
+.company {
+    color: #FC4681;
+}
+.wrapper {
+    width: 76%;
+    margin: auto;
+}
+.main_about {
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.about_right {
+    margin-left: 12%;
+}
+.about_right h1 {
+    display: inline-block;
+    font-size: 34px;
+    padding-bottom: 2px;
+}
+.about_right p {
+    margin: 30px 0 30px 0;
+    color: #6c6c6c;
+}
+.main_team {
+    background: black;
+    text-align: center;
+    padding: 100px 0 125px 0;
+    color: white;
+}
+.main_team h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+.team_cards {
+    display: flex;
+    margin-top: 50px;
+}
+.card {
+    margin: 50px 20px 0 20px;
+}
+.name {
+    margin: 20px 0 5px 0;
+}
+.about {
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 14px;
+}
+.our_services {
+    text-align: center;
+    padding: 100px 0 125px 0;
+}
+.our_services h1 {
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+.text {
+    margin: 55px 0 45px 0;
+    font-style: italic;
+    color: #999999;
+    text-align: center;
+}
+.title {
+    margin-top: 10px;
+}
+.our_work {
+    background: black;
+    text-align: center;
+    padding: 100px 0 125px 0;
+    color: white;
+}
+.our_work h1 {
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+.works {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.works img {
+    margin: 15px;
+}
+.works img:hover {
+    filter: brightness(1.5);
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+
+.contact {
+    padding: 100px 0;
+}
+.contact h1 {
+    font-size: 44px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: black;
+}
+.contact_wrapper {
+    width: 55%;
+    margin: 0 auto;
+    color: #636363;
+}
+.form_inputs {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+input {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.red {
+    color: red;
+}
+textarea {
+    width: 100%;
+    height: 160px;
+}
+input, textarea {
+    border: 1px solid #999999;
+    margin-top: 10px;
+}
+input:hover, textarea:hover {
+    box-shadow: 0 0 3px 2px #d4d4d4;
+}
+.button_block {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+input[type=submit] {
+    width: 165px;
+    height: 40px;
+    color: white;
+    border: 0;
+    background-image: linear-gradient(to top, #FC4681, #fc8ba5);
+}
+input[type=submit]:hover {
+    transform: scale(1.02);
+}
+
+h1:after {
+    content:"";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #FC4681;
+    margin: 30px auto 0 auto;
+}
+main .main_welcome h1:after,
+.about_right h1:after {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #222222;
+}
+footer img {
+    margin: 0 10px;
+    height: 50px;
+}
+footer img:hover {
+    opacity: 0.5;
+}
+
+
+
+@media (max-width: 1250px) {
+    .about_left {
+        width: 100%;
+    }
+    .mv-100 {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 1140px) {
+   .about_right h1 {
+       font-size: 29px;
+   }
+    .about_right p, li {
+        font-size: 15px;
+    }
+    input {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 960px) {
+
+    .topnav a {
+        display: none;
+    }
+    .icon {
+        display: block;
+        color: white;
+        font-size: 25px;
+        margin-top: -5px;
+    }
+    .icon:hover {
+        cursor: pointer
+    }
+    .topnav a:hover {
+        border-bottom: 0;
+        color: #FC4681;
+    }
+    .active a {
+        display: block;
+        margin-right: -10px;
+    }
+
+
+    main .main_welcome h1 {
+        font-size: 34px;
+    }
+    main .main_welcome p {
+        font-size: 16px;
+    }
+    main .main_welcome {
+        padding: 100px 0 90px 0;
+    }
+
+    .main_about {
+        flex-direction: column;
+    }
+
+    .mv-100 {
+        display: block;
+        max-width: 400px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .about_right {
+        margin-left: 0;
+        text-align: center;
+    }
+    .about_right h1 {
+        margin-top: 50px;
+    }
+    .about_right ul {
+        text-align: left;
+    }
+
+
+    .team_cards {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .main_team h1{
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+    .our_services h1 {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+    .text {
+        margin: 55px 0 0 0;
+        font-size: 14px;
+    }
+
+    .our_work h1 {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+
+    .contact h1 {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+    .form_inputs {
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+    }
+}
